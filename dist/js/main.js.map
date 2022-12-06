@@ -1,0 +1,1 @@
+{"version":3,"sources":["one.js","tow.js"],"names":["myMap","Map","mySet","Set"],"mappings":"AAAA,MAAAA,MAAA,IAAAC,ICAAC,MAAA,IAAAC","file":"main.js","sourcesContent":["const myMap = new Map();","const mySet = new Set();"]}
