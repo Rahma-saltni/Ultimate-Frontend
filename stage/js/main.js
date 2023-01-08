@@ -3,4 +3,48 @@ $(function(){
     $(".toggle-sidebar").on("click", function(){
         $(".content-area, .sidebar").toggleClass("no-sidebar");
     });
+    // tooggle Submenue
+    $(".toggle-submenu").on("click", function(){
+        $(this).find('.fa-angle-right').toggleClass('down');
+        $(this).next('.child-links').slideToggle();
+    });
+    //Open Close Fullscreen
+    $(".toggle-fullscreen").on('click', function (){
+        $(this).toggleClass('full-screen');
+        if($(this).hasClass('full-screen')){
+            openFullscreen();
+        }else{
+            closeFullscreen();
+        }
+    });
 });
+
+
+var elem= document.documentElement;
+function openFullscreen(){
+    if(elem.requestFullscreen){
+        elem.requestFullscreen();
+    }else if (elem.mozRequestFullscreen){/*FIREFOX */
+        elem.mozRequestFullscreen();
+    }
+    else if (elem.webkitRequestFullscreen){/* Chrome. safari, opera */
+        elem.webkitRequestFullscreen();
+    }
+    else if (elem.msRequestFullscreen){/* IE, Edge */
+        elem.msRequestFullscreen();
+    }
+}
+
+function closeFullscreen(){
+    if(document.exitFullscreen){
+        document.exitFullscreen();
+    }else if (document.mozCancelFullscreen){/*FIREFOX */
+        document.mozCancelFullscreen();
+    }
+    else if (document.webkitExitFullscreen){/* Chrome. safari, opera */
+        document.webkitExitFullscreen();
+    }
+    else if (document.msExitFullscreen){/* IE, Edge */
+        document.msExitFullscreen();
+    }
+}

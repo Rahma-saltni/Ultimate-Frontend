@@ -1,2 +1,27 @@
 .header
     i.fa-sharp.fa-solid.fa-bars.toggle-sidebar
+    .dropdown.notifications-container
+        i.fa-sharp.fa-solid.fa-bell.header-icon.toggle-notifications#notifications(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications')
+            .noti-head
+                | Notification
+                span 50
+            .noti-content Content
+                ul.list-unstyled 
+                    li
+                        i.fa-solid.fa-envelope
+                        | You Got Email From bla bal
+                    li
+                        i.fa-solid.fa-money-bill
+                        | You Got Money From bla bal
+                    li
+                        i.fa-solid.fa-thumbs-up
+                        | You Got like From bla bal
+                    li
+                        i.fa-solid.fa-envelope
+                        | You Got Email From bla bal
+                    li
+                        i.fa-solid.fa-money-bill
+                        | You Got Money From bla bal
+            .noti-foot.text-center: a(href="#") View All Notificatrions
+        i.fa-solid.fa-up-right-and-down-left-from-center.toggle-fullscreen.header-icon
