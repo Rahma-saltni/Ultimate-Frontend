@@ -24,4 +24,34 @@
                         i.fa-solid.fa-money-bill
                         | You Got Money From bla bal
             .noti-foot.text-center: a(href="#") View All Notificatrions
-        i.fa-solid.fa-up-right-and-down-left-from-center.toggle-fullscreen.header-icon
+    i.fa-solid.fa-up-right-and-down-left-from-center.toggle-fullscreen.header-icon
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            img.avatar.rounded-circle(src="imgs/avatar.jpg", alt="User Avatar")
+            span.user Cilia Ben
+            i.fa-solid.fa-angle-down
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            .user-info
+                h3 Cilia Ben 
+                p Premier Member 
+            hr
+            ul.activities-list.list-unstyled 
+                li Add Comment On Post 'How To Make Bla BLA'
+                li Created Post On Category 'Science'
+                li Created Chart On Charts Page
+                li Add Comment On Post 'How To Make Bla BLA Tow'
+            hr
+            .row.usermenu-links
+                .col
+                    .link-box 
+                        i.fa-solid.fa-gear
+                        span Settings
+                .col
+                    .link-box 
+                        i.fa-solid.fa-user
+                        span My Profile
+                .col
+                    .link-box
+                        i.fa-solid.fa-power-off
+                        span Logout
+                    

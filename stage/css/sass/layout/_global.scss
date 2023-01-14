@@ -5,6 +5,18 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    &.open{
+        font-family: 'Open sans', sans-serif;
+    }
+    &.lato{
+        font-family: 'Lato', sans-serif;
+    }
+    &.roboto{
+        font-family: 'Roboto', sans-serif;
+    }
+    &.poppins{
+        font-family: 'Poppins', sans-serif;
+    }
 }
 .page{
     min-height: 100vh;
@@ -17,6 +29,18 @@ body{
         background-color: #f2f1f6;
         &.no-sidebar{
             width: 100%;
+        }
+    }
+    .page-head{
+        margin-top: 20px;
+        padding: 20px;
+        .page-title{
+            font-weight: bold;
+            color: #27ae60;
+
+        }
+        .page-descriptions{
+
         }
     }
 }
